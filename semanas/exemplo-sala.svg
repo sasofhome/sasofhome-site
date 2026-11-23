@@ -1,0 +1,8 @@
+<svg viewBox="0 0 900 600" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Sala (exemplo de cenário)"><rect width="900" height="430" fill="#ECEAE4"/>
+<rect x="560" y="60" width="240" height="300" rx="6" fill="#D4EEF0"/><rect x="560" y="60" width="240" height="300" rx="6" fill="none" stroke="#FFFFFF" stroke-width="14"/>
+<line x1="680" y1="60" x2="680" y2="360" stroke="#FFFFFF" stroke-width="9"/><line x1="560" y1="200" x2="800" y2="200" stroke="#FFFFFF" stroke-width="9"/>
+<path d="M540 50 Q560 220 548 380 L590 380 Q600 220 580 50 Z" fill="#FFFFFF" opacity=".85"/>
+<path d="M560 380 L800 380 L900 600 L470 600 Z" fill="#E2B53C" opacity=".12"/>
+<rect x="0" y="430" width="900" height="170" fill="#DCC6A2"/>
+<g stroke="#CDB48D" stroke-width="2"><line x1="60" y1="430" x2="-10" y2="600"/><line x1="180" y1="430" x2="110" y2="600"/><line x1="300" y1="430" x2="230" y2="600"/><line x1="420" y1="430" x2="350" y2="600"/><line x1="540" y1="430" x2="470" y2="600"/><line x1="660" y1="430" x2="590" y2="600"/><line x1="780" y1="430" x2="710" y2="600"/><line x1="900" y1="430" x2="830" y2="600"/></g>
+<rect x="0" y="420" width="900" height="12" fill="#FFFFFF"/></svg>

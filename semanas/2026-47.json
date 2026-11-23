@@ -1,0 +1,18 @@
+{
+ "semana": "2026-47",
+ "exemplo": true,
+ "cenas": {
+  "sala": {
+   "imagem": "semanas/exemplo-sala.svg",
+   "pecas": "candeeiro-articulado,sofa-linho,tapete-juta,vaso-terracota"
+  },
+  "cozinha": {
+   "imagem": "semanas/exemplo-cozinha.svg",
+   "pecas": "cacarola-ferro,tabua-carvalho,frascos-vidro"
+  },
+  "varanda": {
+   "imagem": "semanas/exemplo-varanda.svg",
+   "pecas": "mesa-acacia,cadeira-dobravel,floreira-reserva"
+  }
+ }
+}

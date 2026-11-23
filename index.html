@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow"><!-- RETIRAR quando houver produtos reais -->
+<title>SASOFhome — Casa, cozinha e jardim, peça a peça</title>
+<meta name="description" content="Escolha a divisão e toque nas peças: mobiliário, cozinha e varanda, com a razão de cada escolha e lojas europeias que entregam na UE.">
+<link rel="canonical" href="https://www.sasofhome.eu/">
+<link rel="alternate" hreflang="pt-PT" href="https://www.sasofhome.eu/">
+<link rel="alternate" hreflang="es" href="https://www.sasofhome.eu/es/">
+<link rel="alternate" hreflang="en" href="https://www.sasofhome.eu/en/">
+<link rel="alternate" hreflang="de" href="https://www.sasofhome.eu/de/">
+<link rel="alternate" hreflang="x-default" href="https://www.sasofhome.eu/">
+<meta property="og:title" content="SASOFhome — Casa, cozinha e jardim, peça a peça"><meta property="og:description" content="Escolha a divisão e toque nas peças: mobiliário, cozinha e varanda, com a razão de cada escolha e lojas europeias que entregam na UE."><meta property="og:type" content="website">
+<style>@font-face{font-family:"DM Sans";src:url("fontes/DMSans.woff") format("woff");font-weight:100 1000;font-style:normal;font-display:swap}:root{
+  --stone:#F1F0EC; --paper:#FFFFFF; --ink:#2B3134; --azul:#1C7C8F; --azul-2:#156676;
+  --castanho:#5B4535; --amarelo:#E2B53C; --turq-c:#D4EEF0; --turq:#3BB3B0; --muted:#636C71; --line:#DADAD4;
+}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:"DM Sans",system-ui,sans-serif;background:var(--stone);color:var(--ink);line-height:1.6;font-size:16.5px;-webkit-font-smoothing:antialiased}
+a{color:var(--azul)}
+:focus-visible{outline:3px solid var(--amarelo);outline-offset:3px;border-radius:6px}
+.wrap{max-width:1220px;margin:0 auto;padding:0 28px}
+h1,h2,h3{font-weight:700;letter-spacing:-.03em;line-height:1.08}
+[hidden]{display:none!important}
+
+.aviso{background:var(--castanho);color:#F3ECE4;font-size:.82rem;text-align:center;padding:8px 16px}
+.aviso a{color:#fff}
+header{background:rgba(255,255,255,.94);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);position:sticky;top:0;z-index:30}
+.cab{display:flex;align-items:center;gap:28px;padding:14px 28px;max-width:1220px;margin:0 auto}
+.marca{font-size:1.3rem;text-decoration:none;color:var(--ink);display:flex;align-items:baseline;margin-right:auto}
+.marca b{font-weight:800;letter-spacing:.04em;color:var(--azul)}
+.marca span{font-weight:400;color:var(--muted)}
+nav ul{list-style:none;display:flex;gap:22px}
+nav a{text-decoration:none;color:var(--muted);font-size:.92rem;font-weight:500}
+nav a:hover{color:var(--ink)}
+.linguas{list-style:none;display:flex;gap:2px}
+.linguas a{display:block;font-size:.78rem;font-weight:700;padding:5px 8px;border-radius:6px;text-decoration:none;color:var(--muted)}
+.linguas a:hover{background:var(--stone);color:var(--ink)}
+.linguas a[aria-current="true"]{background:var(--azul);color:#fff}
+
+/* HERO: divisões ilustradas */
+.hero{padding:44px 0 56px}
+.hero-topo{display:flex;justify-content:space-between;align-items:flex-end;gap:28px;flex-wrap:wrap;margin-bottom:22px}
+.hero h1{font-size:clamp(2.4rem,5.4vw,4.4rem)}
+.lead{margin-top:12px;max-width:50ch;font-size:1.08rem;color:var(--muted)}
+.tabs{display:flex;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:4px}
+.tabs button{font:inherit;font-weight:600;font-size:.95rem;border:0;background:transparent;color:var(--muted);padding:10px 20px;border-radius:999px;cursor:pointer}
+.tabs button[aria-selected="true"]{background:var(--azul);color:#fff}
+.palco{display:grid;grid-template-columns:minmax(0,2.1fr) minmax(280px,1fr);background:var(--paper);border-radius:20px;overflow:hidden;box-shadow:0 1px 0 var(--line),0 24px 48px -28px rgba(28,124,143,.35)}
+.cena{position:relative;aspect-ratio:800/560;background:var(--turq-c)}
+.cena svg{display:block;width:100%;height:100%}
+.ponto{position:absolute;transform:translate(-50%,-50%);width:38px;height:38px;border-radius:50%;border:3px solid #fff;background:var(--azul);color:#fff;font:700 .95rem/1 "DM Sans",sans-serif;cursor:pointer;box-shadow:0 4px 14px rgba(0,0,0,.25);transition:transform .15s,background .15s}
+.ponto:hover{transform:translate(-50%,-50%) scale(1.12)}
+.ponto[aria-pressed="true"]{background:var(--amarelo);color:var(--ink);transform:translate(-50%,-50%) scale(1.15)}
+.ponto::after{content:"";position:absolute;inset:-9px;border-radius:50%;border:2px solid rgba(255,255,255,.9);opacity:0}
+.cena.entrou .ponto::after{animation:onda 1.4s ease-out 2}
+@keyframes onda{0%{opacity:.9;transform:scale(.7)}100%{opacity:0;transform:scale(1.5)}}
+.painel{padding:24px 22px;border-left:1px solid var(--line);display:flex;flex-direction:column;overflow:auto;height:0;min-height:100%}
+.painel h2{font-size:1.25rem;letter-spacing:-.02em}
+.dica{font-size:.86rem;color:var(--muted);margin:4px 0 14px}
+.painel ol{list-style:none;display:flex;flex-direction:column;gap:8px}
+.item{border-radius:12px;border:1px solid transparent}
+.item[aria-current="true"]{background:var(--turq-c);border-color:var(--turq)}
+.item-cab{display:grid;grid-template-columns:30px 1fr;gap:12px;padding:12px;cursor:pointer;text-align:left;background:transparent;border:0;border-radius:12px;font:inherit;color:inherit;width:100%}
+.item-cab:hover{background:rgba(0,0,0,.035)}
+.item .n{width:28px;height:28px;border-radius:50%;background:var(--azul);color:#fff;font-weight:700;font-size:.85rem;display:grid;place-items:center}
+.item[aria-current="true"] .n{background:var(--amarelo);color:var(--ink)}
+.item b{display:block;font-size:.95rem;line-height:1.3}
+.item small{display:block;color:var(--muted);font-size:.8rem;margin-top:2px}
+.mais{display:none;padding:0 12px 14px 54px}
+.item[aria-current="true"] .mais{display:block}
+.mais p{font-size:.86rem;color:var(--ink);margin-bottom:10px}
+.confianca{list-style:none;display:grid;grid-template-columns:repeat(3,1fr);gap:28px;margin-top:30px}
+.confianca li{border-top:3px solid var(--turq);padding-top:12px}
+.confianca b{display:block;font-size:1rem}
+.confianca span{color:var(--muted);font-size:.92rem}
+@media (max-width:900px){.palco{grid-template-columns:1fr}.painel{border-left:0;border-top:1px solid var(--line);height:auto;min-height:0}.confianca{grid-template-columns:1fr;gap:16px}}
+@media (max-width:560px){.ponto{width:30px;height:30px;font-size:.8rem}.tabs{width:100%}.tabs button{flex:1;padding:10px 8px}}
+
+/* botões */
+.btn{display:inline-block;text-decoration:none;font-weight:600;font-size:.92rem;padding:11px 20px;border-radius:999px;border:1px solid var(--azul);text-align:center}
+.btn-p{background:var(--azul);color:#fff}
+.btn-p:hover{background:var(--azul-2)}
+.pendente{display:block;text-align:center;font-size:.85rem;color:var(--muted);border:1px dashed #C9C9C2;border-radius:999px;padding:10px}
+
+/* secções */
+.presentes{background:var(--castanho);color:#F7F1EA;padding:72px 0}
+.presentes .topo-sec p{color:#E3D7CA}
+.presentes .filtros button{border-color:rgba(255,255,255,.35);color:#fff}
+.presentes .filtros button:hover{border-color:#fff}
+.presentes .filtros button[aria-pressed="true"]{background:var(--amarelo);border-color:var(--amarelo);color:var(--ink)}
+.presentes .ficha{color:var(--ink)}
+.selecao{padding:76px 0}
+.topo-sec{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap;margin-bottom:22px}
+.topo-sec h2{font-size:clamp(1.9rem,3.4vw,2.7rem)}
+.topo-sec p{color:var(--muted);max-width:46ch}
+.filtros{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:28px}
+.filtros button{font:inherit;font-size:.9rem;font-weight:500;background:transparent;border:1px solid var(--line);color:var(--ink);padding:8px 16px;border-radius:999px;cursor:pointer}
+.filtros button:hover{border-color:var(--ink)}
+.filtros button[aria-pressed="true"]{background:var(--azul);border-color:var(--azul);color:#fff}
+.grelha{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:24px}
+.ficha{background:var(--paper);border-radius:16px;overflow:hidden;display:flex;flex-direction:column}
+.foto{aspect-ratio:4/5;position:relative}
+.foto img{width:100%;height:100%;object-fit:cover;display:block}
+.etq{position:absolute;left:12px;top:12px;background:var(--amarelo);color:var(--ink);font-size:.76rem;font-weight:700;padding:5px 11px;border-radius:999px;max-width:calc(100% - 70px)}
+.pin{position:absolute;right:12px;top:12px;width:40px;height:40px;border-radius:50%;background:#fff;display:grid;place-items:center;box-shadow:0 2px 8px rgba(0,0,0,.18)}
+.pin svg{width:20px;height:20px}
+.foto small{position:absolute;left:12px;bottom:12px;background:rgba(255,255,255,.92);font-size:.72rem;padding:3px 9px;border-radius:999px;color:var(--muted)}
+.corpo{padding:18px 20px 20px;display:flex;flex-direction:column;gap:9px;flex:1}
+.meta{display:flex;justify-content:space-between;gap:10px;font-size:.78rem;color:var(--muted)}
+.ficha h3{font-size:1.1rem;line-height:1.28;letter-spacing:-.01em}
+.ficha .nota{color:var(--muted);font-size:.9rem}
+.crit{background:var(--turq-c);border-left:3px solid var(--amarelo);border-radius:6px;padding:9px 11px;font-size:.84rem}
+.corpo .btn,.corpo .pendente{margin-top:auto}
+.loja{font-size:.74rem;color:var(--muted);text-align:center}
+.vazio{opacity:.8}
+
+.tx-carvalho{background:repeating-linear-gradient(92deg,#C9A87E 0 7px,#BE9B70 7px 9px,#D2B48B 9px 18px,#C4A276 18px 21px)}
+.tx-acacia{background:repeating-linear-gradient(97deg,#9A6A43 0 5px,#8C5E3A 5px 8px,#A8774D 8px 15px,#93653F 15px 17px)}
+.tx-linho{background-color:#DCD5C6;background-image:repeating-linear-gradient(0deg,rgba(255,255,255,.22) 0 1px,transparent 1px 3px),repeating-linear-gradient(90deg,rgba(120,100,70,.12) 0 1px,transparent 1px 3px)}
+.tx-ferro{background-color:#3A3D3B;background-image:radial-gradient(rgba(255,255,255,.07) 1px,transparent 1.5px);background-size:5px 5px}
+.tx-pedra{background-color:#B9B6AE;background-image:radial-gradient(rgba(60,60,55,.18) 1px,transparent 1.6px);background-size:7px 7px}
+.tx-terracota{background-color:#B4734F;background-image:radial-gradient(rgba(255,230,200,.12) 1px,transparent 1.6px);background-size:6px 6px}
+.tx-aco{background:linear-gradient(115deg,#9AA0A1,#C6CACA 45%,#8E9495)}
+
+/* comparar */
+.comparar{background:var(--paper);padding:76px 0;border-top:1px solid var(--line)}
+.tabela{overflow-x:auto;border:1px solid var(--line);border-radius:16px}
+table{width:100%;border-collapse:collapse;font-size:.94rem;min-width:720px}
+th,td{text-align:left;padding:14px 18px;border-bottom:1px solid var(--line);vertical-align:top}
+thead th{background:var(--turq-c);font-size:.85rem;font-weight:700}
+tbody th{font-weight:700;white-space:nowrap}
+tbody tr:last-child>*{border-bottom:0}
+tbody td:last-child{font-weight:600;color:var(--azul)}
+.nota-peq{font-size:.82rem;color:var(--muted);margin-top:10px}
+.dicas-t{font-size:1.3rem;margin:44px 0 6px}
+.dicas{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:28px}
+.dicas li{border-top:1px solid var(--line);padding-top:14px}
+.dicas h3{font-size:1.02rem;letter-spacing:-.01em;margin-bottom:4px}
+.dicas p{color:var(--muted);font-size:.94rem}
+@media (max-width:700px){.dicas{grid-template-columns:1fr}}
+
+.legal{padding:64px 0}
+.legal h2{font-size:1.6rem;margin-bottom:14px}
+.legal p,.legal li{max-width:70ch;font-size:.95rem}
+.legal p+p{margin-top:10px}
+.legal h3{font-size:1rem;letter-spacing:0;margin:18px 0 6px}
+.legal ul{padding-left:20px}
+details{margin-top:26px;border-top:1px solid var(--line);padding-top:18px}
+summary{cursor:pointer;font-weight:600}
+footer{background:var(--ink);color:#E6E8E9;padding:34px 0;font-size:.88rem}
+footer .wrap{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+footer a{color:#fff}
+footer nav{display:flex;gap:18px}
+@media (max-width:860px){header nav{display:none}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{animation:none!important;transition:none!important}}
+/* v7: cenário IA + fotografias reais em quadros */
+.cena.modo-foto{aspect-ratio:3/2}
+.fundo{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.quadros{position:absolute;inset:0}
+.quadro{position:absolute;width:19%;transform:translate(-50%,-50%) rotate(var(--r,0deg));background:#fff;border:0;border-radius:6px;padding:6px 6px 0;box-shadow:0 10px 24px -8px rgba(0,0,0,.35);cursor:pointer;font:inherit;color:var(--ink);text-align:center;transition:transform .18s}
+.quadro:hover{transform:translate(-50%,-50%) rotate(0deg) scale(1.05)}
+.quadro[aria-pressed="true"]{outline:3px solid var(--amarelo);transform:translate(-50%,-50%) rotate(0deg) scale(1.08);z-index:2}
+.q-foto{display:block;aspect-ratio:4/5;border-radius:3px;overflow:hidden}
+.q-foto img{width:100%;height:100%;object-fit:cover;display:block}
+.q-nome{font-size:clamp(.58rem,1vw,.74rem);font-weight:600;line-height:1.25;margin:6px 2px 8px;overflow:hidden;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical}
+.q-n{position:absolute;left:-10px;top:-10px;width:30px;height:30px;border-radius:50%;background:var(--azul);color:#fff;font-weight:700;font-size:.85rem;display:grid;place-items:center;border:3px solid #fff}
+.quadro[aria-pressed="true"] .q-n{background:var(--amarelo);color:var(--ink)}
+.ia-aviso{position:absolute;left:12px;bottom:12px;right:12px;width:max-content;max-width:calc(100% - 24px);background:rgba(43,49,52,.82);color:#fff;font-size:.74rem;padding:5px 11px;border-radius:999px}
+.sem{font-weight:500;color:var(--muted);font-size:.9rem;letter-spacing:0}
+@media (max-width:560px){.quadro{width:22%;padding:4px 4px 0}.q-nome{display:none}.q-n{width:24px;height:24px;font-size:.72rem;left:-8px;top:-8px}.ia-aviso{font-size:.66rem;left:8px;bottom:8px}.ia-aviso .ia-2{display:none}}
+</style>
+</head>
+<body>
+<div class="aviso">Esta página tem links de afiliado: se comprar através deles, posso receber uma comissão, sem custo extra para si. <a href="#transparencia">Saber mais</a></div>
+<header><div class="cab">
+  <a class="marca" href="#inicio" aria-label="SASOFhome"><b>SASOF</b><span>home</span></a>
+  <nav aria-label="Navegação principal"><ul>
+    <li><a href="#divisoes">Divisões</a></li><li class="so-pres"><a href="#presentes">Presentes</a></li><li><a href="#selecao">Seleção</a></li><li><a href="#comparar">Comparar</a></li>
+  </ul></nav>
+  <ul class="linguas" aria-label="Idioma"><li><a href="index.html" hreflang="pt-PT" lang="pt-PT" title="Português" aria-current="true">PT</a></li><li><a href="es/index.html" hreflang="es" lang="es" title="Español">ES</a></li><li><a href="en/index.html" hreflang="en" lang="en" title="English">EN</a></li><li><a href="de/index.html" hreflang="de" lang="de" title="Deutsch">DE</a></li></ul>
+</div></header>
+
+<main id="inicio">
+<section class="hero" id="divisoes"><div class="wrap">
+  <div class="hero-topo">
+    <div><h1>A casa, peça a peça.</h1><p class="lead">Escolha uma divisão e toque nos pontos. Vê cada peça no sítio, porque a escolhi e onde a comprar.</p></div>
+    <div class="tabs" role="tablist" aria-label="Divisões"><button type="button" role="tab" id="tab-sala" aria-controls="cena" aria-selected="true" data-cena="sala">Sala</button><button type="button" role="tab" id="tab-cozinha" aria-controls="cena" aria-selected="false" data-cena="cozinha">Cozinha</button><button type="button" role="tab" id="tab-varanda" aria-controls="cena" aria-selected="false" data-cena="varanda">Varanda</button></div>
+  </div>
+  <div class="palco">
+    <div class="cena" id="cena" role="tabpanel"><div class="svg" data-svg="sala"><svg viewBox="0 0 800 560" role="img" aria-labelledby="t-sala" xmlns="http://www.w3.org/2000/svg">
+<title id="t-sala">Sala</title>
+<rect width="800" height="400" fill="#ECEAE4"/>
+<rect x="460" y="56" width="214" height="232" rx="6" fill="#D4EEF0"/>
+<rect x="460" y="56" width="214" height="232" rx="6" fill="none" stroke="#FFFFFF" stroke-width="12"/>
+<line x1="567" y1="56" x2="567" y2="288" stroke="#FFFFFF" stroke-width="8"/>
+<line x1="460" y1="170" x2="674" y2="170" stroke="#FFFFFF" stroke-width="8"/>
+<circle cx="520" cy="110" r="22" fill="#E2B53C" opacity=".55"/>
+<rect x="96" y="150" width="200" height="9" rx="3" fill="#5B4535"/>
+<rect x="118" y="112" width="26" height="38" rx="12" fill="#B4734F"/>
+<rect x="156" y="98" width="18" height="52" rx="8" fill="#FFFFFF" stroke="#6A7378" stroke-width="2"/>
+<rect x="190" y="124" width="62" height="26" rx="3" fill="#1C7C8F"/><rect x="196" y="118" width="50" height="8" rx="2" fill="#E2B53C"/>
+<rect x="0" y="400" width="800" height="160" fill="#DCC6A2"/>
+<g stroke="#CDB48D" stroke-width="2"><line x1="60" y1="400" x2="0" y2="560"/><line x1="170" y1="400" x2="110" y2="560"/><line x1="280" y1="400" x2="220" y2="560"/><line x1="390" y1="400" x2="330" y2="560"/><line x1="500" y1="400" x2="440" y2="560"/><line x1="610" y1="400" x2="550" y2="560"/><line x1="720" y1="400" x2="660" y2="560"/><line x1="830" y1="400" x2="770" y2="560"/></g>
+<ellipse cx="400" cy="478" rx="290" ry="58" fill="#3BB3B0" opacity=".5"/>
+<ellipse cx="400" cy="478" rx="250" ry="44" fill="none" stroke="#FFFFFF" stroke-width="3" stroke-dasharray="6 8" opacity=".8"/>
+<rect x="176" y="246" width="356" height="92" rx="22" fill="#156676"/>
+<rect x="150" y="300" width="408" height="104" rx="20" fill="#1C7C8F"/>
+<rect x="140" y="282" width="44" height="122" rx="18" fill="#156676"/>
+<rect x="524" y="282" width="44" height="122" rx="18" fill="#156676"/>
+<rect x="200" y="262" width="78" height="58" rx="12" fill="#E2B53C" transform="rotate(-6 239 291)"/>
+<rect x="420" y="264" width="74" height="56" rx="12" fill="#FFFFFF" transform="rotate(5 457 292)"/>
+<rect x="172" y="402" width="10" height="20" fill="#5B4535"/><rect x="526" y="402" width="10" height="20" fill="#5B4535"/>
+<rect x="292" y="430" width="200" height="14" rx="6" fill="#5B4535"/>
+<rect x="306" y="444" width="8" height="34" fill="#5B4535"/><rect x="470" y="444" width="8" height="34" fill="#5B4535"/>
+<rect x="356" y="408" width="40" height="22" rx="4" fill="#FFFFFF"/><circle cx="430" cy="420" r="11" fill="#B4734F"/>
+<ellipse cx="622" cy="430" rx="34" ry="8" fill="#2B3134"/>
+<path d="M622 428 L622 196 Q622 150 578 150" fill="none" stroke="#2B3134" stroke-width="6" stroke-linecap="round"/>
+<path d="M548 134 L604 134 L620 178 L532 178 Z" fill="#2B3134"/>
+<path d="M540 178 L612 178 L660 330 L492 330 Z" fill="#E2B53C" opacity=".18"/>
+<path d="M88 340 L152 340 L144 412 L96 412 Z" fill="#B4734F"/>
+<rect x="84" y="332" width="72" height="12" rx="4" fill="#A0603F"/>
+<ellipse cx="85.0" cy="290.0" rx="15.0" ry="42.5" fill="#3BB3B0" transform="rotate(-35 85.0 290.0)"/><ellipse cx="147.5" cy="280.0" rx="15.0" ry="42.5" fill="#1C7C8F" transform="rotate(30 147.5 280.0)"/><ellipse cx="112.5" cy="242.5" rx="15.0" ry="42.5" fill="#3BB3B0" transform="rotate(-5 112.5 242.5)"/><ellipse cx="157.5" cy="315.0" rx="15.0" ry="42.5" fill="#3BB3B0" transform="rotate(55 157.5 315.0)"/><ellipse cx="77.5" cy="327.5" rx="15.0" ry="42.5" fill="#1C7C8F" transform="rotate(-60 77.5 327.5)"/><ellipse cx="125.0" cy="277.5" rx="15.0" ry="42.5" fill="#156676" transform="rotate(10 125.0 277.5)"/>
+</svg></div><div class="svg" data-svg="cozinha" hidden><svg viewBox="0 0 800 560" role="img" aria-labelledby="t-cozinha" xmlns="http://www.w3.org/2000/svg">
+<title id="t-cozinha">Cozinha</title>
+<rect width="800" height="560" fill="#ECEAE4"/>
+<g fill="#FFFFFF" stroke="#D9E7E8" stroke-width="2"><rect x="0" y="180" width="50" height="50"/><rect x="0" y="230" width="50" height="50"/><rect x="0" y="280" width="50" height="50"/><rect x="0" y="330" width="50" height="50"/><rect x="50" y="180" width="50" height="50"/><rect x="50" y="230" width="50" height="50"/><rect x="50" y="280" width="50" height="50"/><rect x="50" y="330" width="50" height="50"/><rect x="100" y="180" width="50" height="50"/><rect x="100" y="230" width="50" height="50"/><rect x="100" y="280" width="50" height="50"/><rect x="100" y="330" width="50" height="50"/><rect x="150" y="180" width="50" height="50"/><rect x="150" y="230" width="50" height="50"/><rect x="150" y="280" width="50" height="50"/><rect x="150" y="330" width="50" height="50"/><rect x="200" y="180" width="50" height="50"/><rect x="200" y="230" width="50" height="50"/><rect x="200" y="280" width="50" height="50"/><rect x="200" y="330" width="50" height="50"/><rect x="250" y="180" width="50" height="50"/><rect x="250" y="230" width="50" height="50"/><rect x="250" y="280" width="50" height="50"/><rect x="250" y="330" width="50" height="50"/><rect x="300" y="180" width="50" height="50"/><rect x="300" y="230" width="50" height="50"/><rect x="300" y="280" width="50" height="50"/><rect x="300" y="330" width="50" height="50"/><rect x="350" y="180" width="50" height="50"/><rect x="350" y="230" width="50" height="50"/><rect x="350" y="280" width="50" height="50"/><rect x="350" y="330" width="50" height="50"/><rect x="400" y="180" width="50" height="50"/><rect x="400" y="230" width="50" height="50"/><rect x="400" y="280" width="50" height="50"/><rect x="400" y="330" width="50" height="50"/><rect x="450" y="180" width="50" height="50"/><rect x="450" y="230" width="50" height="50"/><rect x="450" y="280" width="50" height="50"/><rect x="450" y="330" width="50" height="50"/><rect x="500" y="180" width="50" height="50"/><rect x="500" y="230" width="50" height="50"/><rect x="500" y="280" width="50" height="50"/><rect x="500" y="330" width="50" height="50"/><rect x="550" y="180" width="50" height="50"/><rect x="550" y="230" width="50" height="50"/><rect x="550" y="280" width="50" height="50"/><rect x="550" y="330" width="50" height="50"/><rect x="600" y="180" width="50" height="50"/><rect x="600" y="230" width="50" height="50"/><rect x="600" y="280" width="50" height="50"/><rect x="600" y="330" width="50" height="50"/><rect x="650" y="180" width="50" height="50"/><rect x="650" y="230" width="50" height="50"/><rect x="650" y="280" width="50" height="50"/><rect x="650" y="330" width="50" height="50"/><rect x="700" y="180" width="50" height="50"/><rect x="700" y="230" width="50" height="50"/><rect x="700" y="280" width="50" height="50"/><rect x="700" y="330" width="50" height="50"/><rect x="750" y="180" width="50" height="50"/><rect x="750" y="230" width="50" height="50"/><rect x="750" y="280" width="50" height="50"/><rect x="750" y="330" width="50" height="50"/></g>
+<rect x="0" y="176" width="800" height="6" fill="#3BB3B0" opacity=".6"/>
+<rect x="470" y="140" width="270" height="9" rx="3" fill="#5B4535"/>
+<rect x="488" y="78" width="44" height="62" rx="7" fill="#D4EEF0" stroke="#6A7378" stroke-width="2"/><rect x="491" y="68" width="38" height="12" rx="3" fill="#C9A87E"/><rect x="492" y="105.9" width="36" height="30.1" rx="5" fill="#E2B53C" opacity=".75"/><rect x="546" y="62" width="44" height="78" rx="7" fill="#D4EEF0" stroke="#6A7378" stroke-width="2"/><rect x="549" y="52" width="38" height="12" rx="3" fill="#C9A87E"/><rect x="550" y="97.1" width="36" height="38.900000000000006" rx="5" fill="#E9DCC3" opacity=".75"/><rect x="604" y="86" width="44" height="54" rx="7" fill="#D4EEF0" stroke="#6A7378" stroke-width="2"/><rect x="607" y="76" width="38" height="12" rx="3" fill="#C9A87E"/><rect x="608" y="110.3" width="36" height="25.700000000000003" rx="5" fill="#B4734F" opacity=".75"/><rect x="662" y="70" width="44" height="70" rx="7" fill="#D4EEF0" stroke="#6A7378" stroke-width="2"/><rect x="665" y="60" width="38" height="12" rx="3" fill="#C9A87E"/><rect x="666" y="101.5" width="36" height="34.5" rx="5" fill="#1C7C8F" opacity=".75"/>
+<line x1="90" y1="168" x2="330" y2="168" stroke="#6A7378" stroke-width="5" stroke-linecap="round"/>
+<line x1="130" y1="168" x2="130" y2="238" stroke="#C9A87E" stroke-width="6" stroke-linecap="round"/><ellipse cx="130" cy="242" rx="11" ry="15" fill="#C9A87E"/><line x1="180" y1="168" x2="180" y2="258" stroke="#6A7378" stroke-width="6" stroke-linecap="round"/><ellipse cx="180" cy="262" rx="11" ry="15" fill="#6A7378"/><line x1="230" y1="168" x2="230" y2="228" stroke="#C9A87E" stroke-width="6" stroke-linecap="round"/><ellipse cx="230" cy="232" rx="11" ry="15" fill="#C9A87E"/><line x1="280" y1="168" x2="280" y2="248" stroke="#6A7378" stroke-width="6" stroke-linecap="round"/><ellipse cx="280" cy="252" rx="11" ry="15" fill="#6A7378"/>
+<rect x="0" y="332" width="800" height="28" fill="#C9A87E"/>
+<rect x="0" y="360" width="800" height="200" fill="#1C7C8F"/>
+<g stroke="#156676" stroke-width="4"><line x1="200" y1="360" x2="200" y2="560"/><line x1="400" y1="360" x2="400" y2="560"/><line x1="600" y1="360" x2="600" y2="560"/></g>
+<rect x="70" y="392" width="60" height="7" rx="3" fill="#E2B53C"/><rect x="270" y="392" width="60" height="7" rx="3" fill="#E2B53C"/><rect x="470" y="392" width="60" height="7" rx="3" fill="#E2B53C"/><rect x="670" y="392" width="60" height="7" rx="3" fill="#E2B53C"/>
+<rect x="130" y="326" width="232" height="8" rx="3" fill="#2B3134"/>
+<rect x="160" y="262" width="170" height="66" rx="20" fill="#1C7C8F"/>
+<rect x="142" y="280" width="24" height="12" rx="6" fill="#156676"/><rect x="324" y="280" width="24" height="12" rx="6" fill="#156676"/>
+<ellipse cx="245" cy="262" rx="90" ry="14" fill="#156676"/>
+<rect x="232" y="240" width="26" height="14" rx="6" fill="#6A7378"/>
+<path d="M210 236 q-8 -20 6 -36 M248 230 q-8 -22 6 -40 M286 236 q-8 -20 6 -36" fill="none" stroke="#6A7378" stroke-width="3" opacity=".35" stroke-linecap="round"/>
+<rect x="426" y="196" width="128" height="136" rx="16" fill="#C9A87E"/>
+<circle cx="490" cy="216" r="9" fill="#ECEAE4"/>
+<g stroke="#B8946A" stroke-width="2" opacity=".7"><line x1="440" y1="236" x2="446" y2="326"/><line x1="456" y1="236" x2="462" y2="326"/><line x1="472" y1="236" x2="478" y2="326"/><line x1="488" y1="236" x2="494" y2="326"/><line x1="504" y1="236" x2="510" y2="326"/><line x1="520" y1="236" x2="526" y2="326"/><line x1="536" y1="236" x2="542" y2="326"/></g>
+<circle cx="600" cy="314" r="18" fill="#E2B53C"/><circle cx="632" cy="318" r="14" fill="#E2B53C"/>
+<rect x="680" y="270" width="34" height="62" rx="10" fill="#FFFFFF" stroke="#6A7378" stroke-width="2"/>
+</svg></div><div class="svg" data-svg="varanda" hidden><svg viewBox="0 0 800 560" role="img" aria-labelledby="t-varanda" xmlns="http://www.w3.org/2000/svg">
+<title id="t-varanda">Varanda</title>
+<rect width="800" height="560" fill="#D4EEF0"/>
+<circle cx="640" cy="110" r="46" fill="#E2B53C"/>
+<rect x="40" y="160" width="120" height="150" fill="#FFFFFF"/><rect x="60" y="120" width="70" height="40" fill="#FFFFFF"/>
+<rect x="190" y="200" width="150" height="110" fill="#E6F3F4"/><rect x="400" y="180" width="110" height="130" fill="#FFFFFF"/>
+<polygon points="400,180 455,140 510,180" fill="#B4734F"/><polygon points="40,160 100,124 160,160" fill="#B4734F" opacity=".8"/>
+<rect x="70" y="200" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="110" y="200" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="70" y="250" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="110" y="250" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="420" y="210" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="470" y="210" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="420" y="260" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="470" y="260" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="220" y="230" width="14" height="20" fill="#1C7C8F" opacity=".5"/><rect x="290" y="230" width="14" height="20" fill="#1C7C8F" opacity=".5"/>
+<rect x="0" y="300" width="800" height="9" fill="#2B3134"/>
+<g fill="#2B3134"><rect x="20" y="309" width="5" height="100"/><rect x="58" y="309" width="5" height="100"/><rect x="96" y="309" width="5" height="100"/><rect x="134" y="309" width="5" height="100"/><rect x="172" y="309" width="5" height="100"/><rect x="210" y="309" width="5" height="100"/><rect x="248" y="309" width="5" height="100"/><rect x="286" y="309" width="5" height="100"/><rect x="324" y="309" width="5" height="100"/><rect x="362" y="309" width="5" height="100"/><rect x="400" y="309" width="5" height="100"/><rect x="438" y="309" width="5" height="100"/><rect x="476" y="309" width="5" height="100"/><rect x="514" y="309" width="5" height="100"/><rect x="552" y="309" width="5" height="100"/><rect x="590" y="309" width="5" height="100"/><rect x="628" y="309" width="5" height="100"/><rect x="666" y="309" width="5" height="100"/><rect x="704" y="309" width="5" height="100"/><rect x="742" y="309" width="5" height="100"/><rect x="780" y="309" width="5" height="100"/></g>
+<rect x="0" y="404" width="800" height="156" fill="#C98563"/>
+<g stroke="#B67352" stroke-width="3"><line x1="0" y1="404" x2="-100.0" y2="560"/><line x1="90" y1="404" x2="12.5" y2="560"/><line x1="180" y1="404" x2="125.0" y2="560"/><line x1="270" y1="404" x2="237.5" y2="560"/><line x1="360" y1="404" x2="350.0" y2="560"/><line x1="450" y1="404" x2="462.5" y2="560"/><line x1="540" y1="404" x2="575.0" y2="560"/><line x1="630" y1="404" x2="687.5" y2="560"/><line x1="720" y1="404" x2="800.0" y2="560"/><line x1="810" y1="404" x2="912.5" y2="560"/><line x1="0" y1="460" x2="800" y2="460"/><line x1="0" y1="516" x2="800" y2="516"/></g>
+<ellipse cx="400" cy="474" rx="190" ry="20" fill="#5B4535" opacity=".25"/>
+<rect x="246" y="318" width="308" height="18" rx="5" fill="#9A6A43"/>
+<rect x="268" y="336" width="14" height="128" fill="#87593A"/><rect x="518" y="336" width="14" height="128" fill="#87593A"/>
+<rect x="282" y="350" width="236" height="8" fill="#87593A"/>
+<rect x="330" y="282" width="30" height="36" rx="8" fill="#FFFFFF" stroke="#6A7378" stroke-width="2"/>
+<rect x="378" y="292" width="20" height="26" rx="4" fill="#D4EEF0" stroke="#6A7378" stroke-width="2"/><rect x="410" y="292" width="20" height="26" rx="4" fill="#D4EEF0" stroke="#6A7378" stroke-width="2"/>
+<circle cx="470" cy="306" r="12" fill="#E2B53C"/>
+<g stroke="#2B3134" stroke-width="7" stroke-linecap="round" fill="none"><path d="M140 230 L150 470"/><path d="M200 230 L190 470"/><path d="M146 380 L230 380"/><path d="M228 380 L240 470"/></g>
+<rect x="130" y="236" width="80" height="16" rx="5" fill="#2B3134"/><rect x="134" y="262" width="72" height="12" rx="5" fill="#2B3134"/>
+<rect x="140" y="368" width="96" height="14" rx="5" fill="#1C7C8F"/>
+<rect x="596" y="340" width="168" height="66" rx="6" fill="#B4734F"/>
+<rect x="590" y="334" width="180" height="12" rx="4" fill="#A0603F"/>
+<ellipse cx="607.6" cy="308.0" rx="9.600000000000001" ry="27.200000000000003" fill="#3BB3B0" transform="rotate(-35 607.6 308.0)"/><ellipse cx="647.6" cy="301.6" rx="9.600000000000001" ry="27.200000000000003" fill="#1C7C8F" transform="rotate(30 647.6 301.6)"/><ellipse cx="625.2" cy="277.6" rx="9.600000000000001" ry="27.200000000000003" fill="#3BB3B0" transform="rotate(-5 625.2 277.6)"/><ellipse cx="654.0" cy="324.0" rx="9.600000000000001" ry="27.200000000000003" fill="#3BB3B0" transform="rotate(55 654.0 324.0)"/><ellipse cx="602.8" cy="332.0" rx="9.600000000000001" ry="27.200000000000003" fill="#1C7C8F" transform="rotate(-60 602.8 332.0)"/><ellipse cx="633.2" cy="300.0" rx="9.600000000000001" ry="27.200000000000003" fill="#156676" transform="rotate(10 633.2 300.0)"/><ellipse cx="664.8" cy="308.0" rx="10.8" ry="30.6" fill="#3BB3B0" transform="rotate(-35 664.8 308.0)"/><ellipse cx="709.8" cy="300.8" rx="10.8" ry="30.6" fill="#1C7C8F" transform="rotate(30 709.8 300.8)"/><ellipse cx="684.6" cy="273.8" rx="10.8" ry="30.6" fill="#3BB3B0" transform="rotate(-5 684.6 273.8)"/><ellipse cx="717.0" cy="326.0" rx="10.8" ry="30.6" fill="#3BB3B0" transform="rotate(55 717.0 326.0)"/><ellipse cx="659.4" cy="335.0" rx="10.8" ry="30.6" fill="#1C7C8F" transform="rotate(-60 659.4 335.0)"/><ellipse cx="693.6" cy="299.0" rx="10.8" ry="30.6" fill="#156676" transform="rotate(10 693.6 299.0)"/><ellipse cx="719.0" cy="310.0" rx="9.0" ry="25.5" fill="#3BB3B0" transform="rotate(-35 719.0 310.0)"/><ellipse cx="756.5" cy="304.0" rx="9.0" ry="25.5" fill="#1C7C8F" transform="rotate(30 756.5 304.0)"/><ellipse cx="735.5" cy="281.5" rx="9.0" ry="25.5" fill="#3BB3B0" transform="rotate(-5 735.5 281.5)"/><ellipse cx="762.5" cy="325.0" rx="9.0" ry="25.5" fill="#3BB3B0" transform="rotate(55 762.5 325.0)"/><ellipse cx="714.5" cy="332.5" rx="9.0" ry="25.5" fill="#1C7C8F" transform="rotate(-60 714.5 332.5)"/><ellipse cx="743.0" cy="302.5" rx="9.0" ry="25.5" fill="#156676" transform="rotate(10 743.0 302.5)"/>
+<g fill="#E2B53C"><circle cx="30" cy="42.2" r="6"/><circle cx="90" cy="46.0" r="6"/><circle cx="150" cy="49.1" r="6"/><circle cx="210" cy="51.6" r="6"/><circle cx="270" cy="53.4" r="6"/><circle cx="330" cy="54.5" r="6"/><circle cx="390" cy="55.0" r="6"/><circle cx="450" cy="54.8" r="6"/><circle cx="510" cy="53.9" r="6"/><circle cx="570" cy="52.3" r="6"/><circle cx="630" cy="50.0" r="6"/><circle cx="690" cy="47.1" r="6"/><circle cx="750" cy="43.5" r="6"/></g>
+<path d="M0 34 Q400 64 800 34" fill="none" stroke="#2B3134" stroke-width="2"/>
+</svg></div><img class="fundo" id="fundo" alt="" hidden><div class="quadros" id="quadros" hidden></div><div class="pontos" id="pontos"></div><p class="ia-aviso" id="ia-aviso" hidden>Cenário gerado por IA.<span class="ia-2"> As peças aparecem nas fotografias reais da loja.</span></p></div>
+    <aside class="painel" aria-live="polite"><h2>Nesta divisão <span class="sem" id="sem"></span></h2><p class="dica">Toque num ponto da imagem ou numa peça da lista.</p><ol id="lista-cena"></ol></aside>
+  </div>
+  <ul class="confianca"><li><b>Entrega na UE</b><span>Só lojas que enviam para os países da União Europeia.</span></li><li><b>Escolha explicada</b><span>Cada peça diz o material, as medidas e para quem serve.</span></li><li><b>Sem custo extra</b><span>O preço é o mesmo da loja. A comissão é paga pela loja.</span></li></ul>
+</div></section>
+
+<section class="presentes" id="presentes"><div class="wrap">
+  <div class="topo-sec"><h2>Presentes para a casa</h2><p>Ideias de Natal que se usam todos os dias, organizadas por orçamento e por pessoa.</p></div>
+  <div class="filtros" role="group" aria-label="Presentes para a casa"><button type="button" data-pres="todos" aria-pressed="true">Todos</button><button type="button" data-pres="ate30" aria-pressed="false">Até 30 €</button><button type="button" data-pres="ate75" aria-pressed="false">Até 75 €</button><button type="button" data-pres="mais75" aria-pressed="false">Mais de 75 €</button><button type="button" data-pres="cozinha" aria-pressed="false">Para quem cozinha</button><button type="button" data-pres="jardim" aria-pressed="false">Para quem tem varanda</button><button type="button" data-pres="casanova" aria-pressed="false">Para casa nova</button></div>
+  <div class="grelha" id="grelha-pres"></div>
+</div></section>
+
+<section class="selecao" id="selecao"><div class="wrap">
+  <div class="topo-sec"><h2>Toda a seleção</h2><p>Peças escolhidas uma a uma. O preço e a disponibilidade estão sempre na loja.</p></div>
+  <div class="filtros" role="group" aria-label="Toda a seleção"><button type="button" data-filtro="todos" aria-pressed="true">Tudo</button><button type="button" data-filtro="interior" aria-pressed="false">Interior</button><button type="button" data-filtro="cozinha" aria-pressed="false">Cozinha</button><button type="button" data-filtro="jardim" aria-pressed="false">Jardim e varanda</button></div>
+  <div class="grelha" id="grelha"></div>
+</div></section>
+
+<section class="comparar" id="comparar"><div class="wrap">
+  <div class="topo-sec"><h2>Mesa de exterior: que material?</h2><p>A pergunta que mais se faz antes de comprar para a varanda. Compare antes de escolher.</p></div>
+  <div class="tabela"><table><thead><tr><th scope="col">Material</th><th scope="col">Ao ar livre</th><th scope="col">Manutenção</th><th scope="col">Peso</th><th scope="col">Melhor para</th></tr></thead><tbody><tr><th scope="row">Teca</th><td data-label="Ao ar livre">Muito resistente</td><td data-label="Manutenção">Quase nenhuma; ganha cor prateada se não for oleada</td><td data-label="Peso">Pesada</td><td data-label="Melhor para">Terraços descobertos</td></tr><tr><th scope="row">Acácia</th><td data-label="Ao ar livre">Resistente se for oleada</td><td data-label="Manutenção">Óleo uma a duas vezes por ano</td><td data-label="Peso">Média</td><td data-label="Melhor para">Varandas cobertas</td></tr><tr><th scope="row">Alumínio</th><td data-label="Ao ar livre">Não enferruja</td><td data-label="Manutenção">Só água e sabão</td><td data-label="Peso">Leve</td><td data-label="Melhor para">Zonas junto ao mar</td></tr><tr><th scope="row">Aço lacado</th><td data-label="Ao ar livre">Bom enquanto a pintura estiver intacta</td><td data-label="Manutenção">Retocar riscos para evitar ferrugem</td><td data-label="Peso">Média</td><td data-label="Melhor para">Varandas pequenas</td></tr><tr><th scope="row">Fibra sintética</th><td data-label="Ao ar livre">Resiste à chuva e ao sol</td><td data-label="Manutenção">Só água e sabão</td><td data-label="Peso">Leve</td><td data-label="Melhor para">Conjuntos de estar</td></tr></tbody></table></div>
+  <p class="nota-peq">Indicações gerais: confirme sempre as instruções de cada fabricante.</p>
+  <h3 class="dicas-t">Antes de comprar</h3><ul class="dicas"><li><h3>Espaço à volta da mesa</h3><p>Conte com cerca de 75 cm livres atrás de cada cadeira para se sentar e levantar.</p></li><li><h3>Cozinhar a altas temperaturas</h3><p>Prefira aço inoxidável 18/10, ferro fundido, vidro borossilicato ou madeira sem tratamento.</p></li></ul>
+</div></section>
+
+<section class="legal" id="transparencia"><div class="wrap">
+  <h2>Transparência e links de afiliado</h2><p>A SASOFhome é um projeto editorial independente. Alguns links desta página são links de afiliado: se comprar através deles, a loja paga-me uma pequena comissão, sem qualquer custo adicional para si. Esta página não vende produtos, não processa pagamentos nem trata encomendas; a compra, a entrega, as trocas e as devoluções são da responsabilidade da loja onde compra.</p>
+<p>As peças são escolhidas por critérios próprios (material, desenho, durabilidade) e não por valor de comissão. Os preços e a disponibilidade são definidos pelas lojas e podem mudar a qualquer momento.</p>
+<h3>Imagens geradas por IA</h3><p>Os cenários das divisões são gerados por inteligência artificial e mudam todas as semanas. Os produtos não são gerados: aparecem nas fotografias fornecidas pelas lojas, sem alterações.</p>
+  <h3>Quem é responsável por esta página</h3>
+  <ul><li>Nome: SASOFhome</li><li>Contacto: <a href="mailto:contact@sasofhome.eu">contact@sasofhome.eu</a></li></ul>
+  <details id="privacidade"><summary>Política de privacidade e cookies</summary><h3>Que dados recolho</h3>
+<p>Esta página não tem formulários, contas de utilizador nem ferramentas de estatística, e não instala cookies no seu navegador. O serviço de alojamento (Netlify, Inc.) pode registar dados técnicos de acesso (como o endereço IP) por razões de segurança, nos termos da sua própria política de privacidade.</p>
+<h3>Quando clica num link de uma loja</h3>
+<p>Ao clicar num link de afiliado, sai desta página e passa a estar no site da loja ou da rede de afiliação, que pode usar cookies para registar que chegou a partir daqui. Esse tratamento é feito por essas entidades, segundo as respetivas políticas de privacidade e de cookies.</p>
+<h3>Os seus direitos</h3>
+<p>Nos termos do Regulamento Geral sobre a Proteção de Dados (RGPD), pode pedir acesso, retificação ou apagamento dos seus dados através de <a href="mailto:contact@sasofhome.eu">contact@sasofhome.eu</a> e apresentar reclamação à Comissão Nacional de Proteção de Dados (CNPD) ou à autoridade de controlo do seu país de residência.</p>
+<p>Última atualização: 23 de novembro de 2026.</p></details>
+</div></section>
+</main>
+
+<footer><div class="wrap">
+  <span>© <span id="ano"></span> SASOFhome. Seleção independente para casa, cozinha e jardim.</span>
+  <nav aria-label="Footer"><a href="#transparencia">Transparência</a><a href="#privacidade">Política de privacidade e cookies</a></nav>
+</div></footer>
+
+<script src="produtos.js"></script>
+<script>const LANG="pt", CFG={"ui": {"btn": "Ver na loja", "nolink": "Exemplo: link por inserir", "criterio": "Critério", "melhor": "Melhor para", "envio": "Entrega na UE", "guardar": "Guardar no Pinterest", "loja": "Loja", "aff": "link de afiliado", "vazio": "Ainda não há peças com este filtro.", "img": "Imagem do programa de afiliação", "ver": "Ver peça", "ia": "Cenário gerado por IA. As peças aparecem nas fotografias reais da loja.", "semana": "Semana"}, "cat": {"interior": "Interior", "jardim": "Jardim e varanda", "cozinha": "Cozinha"}, "cenas": {"sala": "Sala", "cozinha": "Cozinha", "varanda": "Varanda"}};
+const UI=CFG.ui;
+const esc=t=>String(t??"").replace(/[&<>"']/g,c=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const tr=v=>(v&&typeof v==="object")?(v[LANG]||v.en||v.pt||""):(v||"");
+const P=(window.PRODUTOS||[]).filter(p=>!p.linguas||p.linguas.includes(LANG));
+const linkDe=p=>(p.links&&p.links[LANG])||p.link||"#";
+const temLink=p=>{const l=linkDe(p);return l&&l!=="#";};
+const acao=p=>temLink(p)?`<a class="btn btn-p" href="${esc(linkDe(p))}" target="_blank" rel="sponsored nofollow noopener">${UI.btn}</a>`:`<span class="pendente">${UI.nolink}</span>`;
+const PIN='<svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#E60023" d="M12 2a10 10 0 0 0-3.6 19.3c-.1-.8-.2-2 0-2.9l1.2-5s-.3-.6-.3-1.5c0-1.4.8-2.5 1.8-2.5.9 0 1.3.7 1.3 1.5 0 .9-.6 2.2-.9 3.4-.2 1 .5 1.9 1.6 1.9 1.9 0 3.3-2 3.3-4.9 0-2.6-1.8-4.4-4.5-4.4-3 0-4.8 2.3-4.8 4.6 0 .9.4 1.9.8 2.4l.1.4-.3 1.2c0 .2-.2.3-.4.2-1.4-.6-2.2-2.6-2.2-4.2 0-3.4 2.5-6.6 7.2-6.6 3.8 0 6.7 2.7 6.7 6.3 0 3.7-2.4 6.8-5.6 6.8-1.1 0-2.2-.6-2.5-1.3l-.7 2.6c-.2 1-.9 2.2-1.4 2.9A10 10 0 1 0 12 2z"/></svg>';
+
+function ficha(p){
+  const nome=tr(p.nome), melhor=tr(p.melhor), loja=(p.lojas&&p.lojas[LANG])||p.loja||"";
+  const foto=p.imagem?`<img src="${esc(p.imagem)}" alt="${esc(nome)}" loading="lazy">`:`<small>${UI.img}</small>`;
+  const pin=p.imagem?`<a class="pin" href="https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(location.href.split('#')[0])}&media=${encodeURIComponent(p.imagem)}&description=${encodeURIComponent(nome)}" target="_blank" rel="noopener" aria-label="${UI.guardar}" title="${UI.guardar}">${PIN}</a>`:"";
+  return `<article class="ficha">
+    <div class="foto ${p.imagem?"":"tx-"+esc(p.textura||"linho")}">${foto}${melhor?`<span class="etq">${UI.melhor}: ${esc(melhor)}</span>`:""}${pin}</div>
+    <div class="corpo">
+      <div class="meta"><span>${esc(CFG.cat[p.categoria]||"")}</span>${p.envioUE?`<span>${UI.envio}</span>`:""}</div>
+      <h3>${esc(nome)}</h3>
+      <p class="nota">${esc(tr(p.nota))}</p>
+      <p class="crit"><b>${UI.criterio}:</b> ${esc(tr(p.criterio))}</p>
+      ${acao(p)}
+      ${loja?`<span class="loja">${UI.loja}: ${esc(loja)}, ${UI.aff}</span>`:""}
+    </div></article>`;
+}
+function grelha(id,lista){
+  document.getElementById(id).innerHTML=lista.length?lista.map(ficha).join(""):`<p class="vazio">${UI.vazio}</p>`;
+}
+function chips(attr,fn){
+  const bs=document.querySelectorAll(`[${attr}]`);
+  bs.forEach(b=>b.addEventListener("click",()=>{bs.forEach(x=>x.setAttribute("aria-pressed","false"));b.setAttribute("aria-pressed","true");fn(b.getAttribute(attr));}));
+}
+
+/* divisões: ilustrações (sem ficheiro semanal) ou cenário IA + fotos reais (com ficheiro semanal) */
+const BASE=LANG==="pt"?"":"../";
+const cenaEl=document.getElementById("cena"), pontos=document.getElementById("pontos"), lista=document.getElementById("lista-cena");
+const fundo=document.getElementById("fundo"), quadros=document.getElementById("quadros");
+const SLOTS=[[16,36,-3],[39,64,2],[62,35,-2],[85,63,3]];
+let atual=[], SEM=null, cenaAtual="sala";
+function escolher(i,rolar){
+  document.querySelectorAll(".ponto,.quadro").forEach(b=>b.setAttribute("aria-pressed",+b.dataset.i===i?"true":"false"));
+  lista.querySelectorAll(".item").forEach((li,j)=>{li.setAttribute("aria-current",j===i?"true":"false");li.querySelector(".item-cab").setAttribute("aria-expanded",j===i?"true":"false");if(j===i&&rolar)li.scrollIntoView({block:"nearest",behavior:"smooth"});});
+}
+const idsDe=c=>(Array.isArray(c.pecas)?c.pecas:String(c.pecas||"").split(",")).map(x=>x.trim()).filter(Boolean);
+function quadro(p,i){
+  const s=SLOTS[i], nome=tr(p.nome);
+  const foto=p.imagem?`<img src="${esc(p.imagem)}" alt="" loading="lazy">`:"";
+  return `<button type="button" class="quadro" data-i="${i}" aria-pressed="false" style="left:${s[0]}%;top:${s[1]}%;--r:${s[2]}deg" aria-label="${i+1}. ${esc(nome)}">
+    <span class="q-foto ${p.imagem?"":"tx-"+esc(p.textura||"linho")}">${foto}</span><span class="q-nome">${esc(nome)}</span><span class="q-n">${i+1}</span></button>`;
+}
+function cena(k){
+  cenaAtual=k;
+  document.querySelectorAll("[data-cena]").forEach(b=>b.setAttribute("aria-selected",b.dataset.cena===k?"true":"false"));
+  cenaEl.setAttribute("aria-labelledby","tab-"+k);
+  const c=SEM&&SEM.cenas&&SEM.cenas[k];
+  if(c){
+    atual=idsDe(c).map(id=>P.find(p=>p.id===id)).filter(Boolean).slice(0,SLOTS.length);
+    document.querySelectorAll("[data-svg]").forEach(s=>s.hidden=true);
+    const src=/^https?:/.test(c.imagem)?c.imagem:BASE+c.imagem;
+    fundo.src=src; fundo.alt=UI.ia+" "+CFG.cenas[k]; fundo.hidden=false;
+    quadros.hidden=false; quadros.innerHTML=atual.map(quadro).join(""); pontos.innerHTML="";
+    document.getElementById("ia-aviso").hidden=false; cenaEl.classList.add("modo-foto");
+  }else{
+    atual=P.filter(p=>p.cena===k&&Array.isArray(p.ponto));
+    document.querySelectorAll("[data-svg]").forEach(s=>s.hidden=s.dataset.svg!==k);
+    fundo.hidden=true; quadros.hidden=true; quadros.innerHTML="";
+    pontos.innerHTML=atual.map((p,i)=>`<button type="button" class="ponto" data-i="${i}" style="left:${+p.ponto[0]}%;top:${+p.ponto[1]}%" aria-pressed="false" aria-label="${i+1}. ${esc(tr(p.nome))}">${i+1}</button>`).join("");
+    document.getElementById("ia-aviso").hidden=true; cenaEl.classList.remove("modo-foto");
+  }
+  lista.innerHTML=atual.map((p,i)=>`<li class="item" aria-current="false">
+    <button type="button" class="item-cab" aria-expanded="false"><span class="n">${i+1}</span><span><b>${esc(tr(p.nome))}</b>${tr(p.melhor)?`<small>${UI.melhor}: ${esc(tr(p.melhor))}</small>`:""}</span></button>
+    <div class="mais"><p>${esc(tr(p.nota))}</p>${acao(p)}</div></li>`).join("");
+  document.querySelectorAll(".ponto,.quadro").forEach(b=>b.addEventListener("click",()=>escolher(+b.dataset.i,true)));
+  lista.querySelectorAll(".item-cab").forEach((b,i)=>b.addEventListener("click",()=>escolher(i,false)));
+  cenaEl.classList.remove("entrou"); void cenaEl.offsetWidth; cenaEl.classList.add("entrou");
+}
+document.querySelectorAll("[data-cena]").forEach(b=>b.addEventListener("click",()=>cena(b.dataset.cena)));
+cena("sala");
+function isoSemana(d){const t=new Date(Date.UTC(d.getFullYear(),d.getMonth(),d.getDate()));const dia=t.getUTCDay()||7;t.setUTCDate(t.getUTCDate()+4-dia);const ano=t.getUTCFullYear();const w=Math.ceil(((t-Date.UTC(ano,0,1))/864e5+1)/7);return ano+"-"+String(w).padStart(2,"0");}
+(async()=>{
+  const hoje=new Date();
+  for(const s of [isoSemana(hoje),isoSemana(new Date(hoje.getTime()-7*864e5))]){
+    try{const r=await fetch(`${BASE}semanas/${s}.json`,{cache:"no-cache"}); if(!r.ok)continue;
+      SEM=await r.json(); document.getElementById("sem").textContent=`· ${UI.semana} ${String(SEM.semana||s).split("-")[1]}`; cena(cenaAtual); return;}catch(e){}
+  }
+})();
+
+/* guia de presentes */
+const presAtivo=window.PRESENTES===true||(window.PRESENTES!==false&&[10,11].includes(new Date().getMonth()));
+const PR=P.filter(p=>p.presente);
+if(!presAtivo||!PR.length){document.getElementById("presentes").hidden=true;document.querySelectorAll(".so-pres").forEach(e=>e.hidden=true);}
+else{
+  const fp=f=>PR.filter(p=>f==="todos"||p.faixa===f||(p.para||[]).includes(f));
+  chips("data-pres",f=>grelha("grelha-pres",fp(f))); grelha("grelha-pres",PR);
+}
+
+/* seleção completa */
+chips("data-filtro",f=>grelha("grelha",P.filter(p=>f==="todos"||p.categoria===f)));
+grelha("grelha",P);
+document.getElementById("ano").textContent=new Date().getFullYear();
+</script>
+</body>
+</html>
